@@ -11,6 +11,15 @@ public class Main {
         Veiculo.getTotalVeiculos();
         car1.setModelo("Ferrari");
         car1.exibirDetalhes();
+
+        Locadora max = new Locadora("MaxLocadora");
+        max.cadastrarVeiculo(car1); 
+        max.listarVeiculos();
+        max.cadastrarVeiculo(car2);
+        max.listarVeiculos();
+
+
+
     
 }
 }

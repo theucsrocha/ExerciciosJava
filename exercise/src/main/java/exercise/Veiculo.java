@@ -1,10 +1,15 @@
 package exercise;
 
 public class Veiculo {
+
+    //Atributos
+    
     private String placa;
     private String modelo;
     private int ano;
     static private int totalVeiculos;
+
+    //Metodos Construtores
 
     public Veiculo(String placa, String modelo, int ano){
         this.placa = placa;
@@ -12,6 +17,15 @@ public class Veiculo {
         this.ano = ano;
         totalVeiculos++;
     }
+
+    public Veiculo(String placa, String modelo){
+        this.placa = placa;
+        this.modelo = modelo;
+        ano = 0;
+        totalVeiculos++;
+    }
+
+
 
     // Metodos Getter
 
@@ -51,7 +65,15 @@ public class Veiculo {
 
     //Metodo Estáticos
 
-    static public void getTotalVeiculos(){
-        System.out.println("Veículos Totais: " + totalVeiculos);
+    static public int getTotalVeiculos(){
+        return totalVeiculos;
     }
+
+    //FIM Metodos Estaticos
+
+    public double calcularDiaria(int dias){
+        return (100*dias) + (0 * 0.10);
+    }
+    
+
 }
