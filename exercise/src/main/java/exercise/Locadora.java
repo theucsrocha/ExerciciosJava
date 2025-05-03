@@ -20,13 +20,13 @@ public class Locadora {
         }
     }
 
-    public void calcularValorTotalLocacao(String placa, int dias){
+     public double calcularValorTotalLocacao(String placa, int dias){
         for(Veiculo v : veiculosCadastrados){
             if(v.getPlaca().equals(placa)){
-                System.out.println("Valor da diaria: " + v.calcularDiaria(dias));
+                return v.calcularDiaria(dias);
             }
         }
-
+        return -1;
     }
 
 

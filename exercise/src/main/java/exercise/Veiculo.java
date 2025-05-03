@@ -11,6 +11,8 @@ public class Veiculo {
 
     //Metodos Construtores
 
+    public Veiculo(){}
+
     public Veiculo(String placa, String modelo, int ano){
         this.placa = placa;
         this.modelo = modelo;
